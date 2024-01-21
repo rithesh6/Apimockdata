@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Api mock data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" class="btn btn-success mb-3" data-toggle="modal" data-target="#inputModal" id="add-user">
+        Add User
+      </button>
+    
+      <div class="modal" id="inputModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <h4 class="modal-title"> Enter The UserName </h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+      
+            <div class="modal-body">
+              <input type="text" class="form-control" id="userName">
+            </div>
+      
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success" onClick="modifyData()">Save</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <div class="container">
+
+        <table id="data-table" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>CreatedAt</th>
+                    <th>Name</th>
+                    <th>Avatar</th>
+                    <th>Id</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./json.js"></script>
+    
+</body>
+
+</html>
+
+
